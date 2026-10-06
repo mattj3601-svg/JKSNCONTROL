@@ -1,0 +1,19 @@
+{
+  "name": "southops-v4-test",
+  "version": "4.0.3-test.1",
+  "description": "SouthOps V4.0.3 Discord operations bot - JavaScript test build",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js",
+    "check": "node --check index.js && node --check commands.js && node --check store.js && node --check ui.js && node --check deploy-commands.js"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.22.1",
+    "dotenv": "^16.6.1"
+  }
+}
